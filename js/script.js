@@ -12,11 +12,15 @@ $(document).ready(function() {
 		}
 	});
 
+
 	$("#calculate-btn").on("click", function() {
+
+		
+
 		var calculateAndDisplayScore = function() {
-			window.scrollTo(0, 400);
+			// window.scrollTo(0, 400);
 			// hide form template if all inputs are completed
-			$("#form").hide();
+			// $("#form").hide();
 
 			// get input values
 			var electricInput = document.getElementById("electric").value;
@@ -101,13 +105,18 @@ $(document).ready(function() {
 
 			// calculate total score and round to nearest whole integer
 			totalScore = Math.round(energyScore + travelScore + wasteScore);
+			totalScore = totalScore / 500;
 			var formattedScore = totalScore.toLocaleString("en");
 			// console.log(totalScore);
 
-			document.getElementById("score").innerHTML = formattedScore;
+			document.getElementById("score").innerHTML = 'Anually you emmit <strong>' + parseInt(formattedScore*500) + '</strong> lbs of CO<sub>2</sub>. <br> You should plant <strong>' + parseInt(formattedScore) + '</strong> trees to offset your footprint.' ;
 
 			// display results
 			$("#results").show();
+
+			$([document.documentElement, document.body]).animate({
+				scrollTop: $("#scrollTo").offset().top
+		}, 2000);
 
 			// refresh page when recalculate button clicked
 			$("#recalculate-btn").on("click", function() {

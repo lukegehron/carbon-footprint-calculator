@@ -1,136 +1,552 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-	<title>Carbon Footprint Calculator</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" href="images/favicon.ico">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script type="text/javascript">
+    document.documentElement.className = 'js';
+  </script>
+  <title>Haiti Reforestation Partnership | We plant trees and good things happen</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style id="et-divi-userfonts">
+    @font-face {
+      font-family: "recursive_sans_casual_extrablack";
+      src: url("https://haitireforest.org/wp-content/uploads/et-fonts/RecursiveSansCslSt-XBlk.ttf") format("truetype");
+    }
 
+    @font-face {
+      font-family: "recursive_sans_linear_light";
+      src: url("https://haitireforest.org/wp-content/uploads/et-fonts/RecursiveSansLnrSt-Light.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "recursive_mono_linear_regular";
+      src: url("https://haitireforest.org/wp-content/uploads/et-fonts/RecursiveMonoLnrSt-Regular.ttf") format("truetype");
+    }
+  </style>
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel='dns-prefetch' href='//s.w.org' />
+  <link rel="alternate" type="application/rss+xml" title="Haiti Reforestation Partnership &raquo; Feed"
+    href="https://haitireforest.org/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="Haiti Reforestation Partnership &raquo; Comments Feed"
+    href="https://haitireforest.org/comments/feed/" />
+  <!-- This site uses the Google Analytics by ExactMetrics plugin v6.0.2 - Using Analytics tracking - https://www.exactmetrics.com/ -->
+
+
+  <link rel='stylesheet' id='wp-block-library-css'
+    href='https://haitireforest.org/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='divi-style-css' href='https://haitireforest.org/wp-content/themes/Divi/style.css?ver=4.4.7'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='et-builder-googlefonts-cached-css'
+    href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A300%2C300italic%2C700&#038;ver=5.4.2#038;subset=latin,latin-ext'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='dashicons-css' href='https://haitireforest.org/wp-includes/css/dashicons.min.css?ver=5.4.2'
+    type='text/css' media='all' />
+
+  <script type='text/javascript' src='https://haitireforest.org/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+  <script type='text/javascript'
+    src='https://haitireforest.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+  <script type='text/javascript'
+    src='https://haitireforest.org/wp-content/themes/Divi/core/admin/js/es6-promise.auto.min.js?ver=5.4.2'></script>
+
+
+  <link rel="alternate" type="application/json+oembed"
+    href="https://haitireforest.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaitireforest.org%2F" />
+  <link rel="alternate" type="text/xml+oembed"
+    href="https://haitireforest.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaitireforest.org%2F&#038;format=xml" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link rel="icon" href="https://haitireforest.org/wp-content/uploads/Favicon_-150x150.png" sizes="32x32" />
+  <link rel="icon" href="https://haitireforest.org/wp-content/uploads/Favicon_-300x300.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://haitireforest.org/wp-content/uploads/Favicon_-300x300.png" />
+  <meta name="msapplication-TileImage" content="https://haitireforest.org/wp-content/uploads/Favicon_-300x300.png" />
+  <link rel="stylesheet" id="et-core-unified-tb-1530-1497-cached-inline-styles"
+    href="https://haitireforest.org/wp-content/et-cache/1497/et-core-unified-tb-1530-1497-15996252414351.min.css"
+    onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" />
+  <link rel="stylesheet" id="et-core-unified-1497-cached-inline-styles"
+    href="https://haitireforest.org/wp-content/et-cache/1497/et-core-unified-1497-15996252414351.min.css"
+    onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" />
 </head>
-<body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" id="announcement-panel">
-				<h1 id="announcement-header">What is your carbon footprint?</h1>
-				<h3 id="announcement-subheader">Find out now with this simple calculator</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-				<div id="form">
-					<form>
-						<h3 id="home-energy-label"><i class="fa fa-home" aria-hidden="true"></i> Home Energy</h3>	
-						<div class="form-group">
-							<label for="electric">Monthly electric bill</label>
-							<div class="input-group">
-								<div class="input-group-addon">$</div>
-								<input class="form-control" id="electric" type="number" min="0" step="0.01">
-							</div>
-							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-						</div>
-						<div class="form-group">
-							<label for="gas">Monthly natural gas bill</label>
-							<div class="input-group">
-								<div class="input-group-addon">$</div>
-								<input class="form-control" id="gas" type="number" min="0" step="0.01">
-							</div>
-							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-						</div>
-						<div class="form-group">
-							<label for="oil">Monthly oil bil</label>
-							<p><i>Somes homes use oil as a fuel source for heating furnances or boilers, and is often abbreviated as HHO.</i></p>
-							<div class="input-group">
-								<div class="input-group-addon">$</div>
-								<input class="form-control" id="oil" type="number" min="0" step="0.01">
-							</div>
-							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-						</div>
-						<br/>
-						<h3 class="form-section-label" id="travel-label"><i class="fa fa-globe" aria-hidden="true"></i> Travel</h3>
-						<div class="form-group">
-							<label for="car">Annual miles driven on your car</label>
-							<input class="form-control" id="car" type="number" min="0" step="1">
-							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-						</div>
-						<div class="form-group">
-							<label for="flights-4-less">Number of flights taken in the past year (4 hours or less)</label>
-							<input class="form-control" id="flights-4-less" type="number" min="0" step="1">
-							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-						</div>
-						<div class="form-group">
-							<label for="flights-4-more">Number of flights taken in the past year (4 hours or more)</label>
-							<input class="form-control" id="flights-4-more" type="number" min="0" step="1">
-							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-						</div>
-						<br/>
-						<h3 class="form-section-label" id="waste-label"><i class="fa fa-recycle" aria-hidden="true"></i> Waste</h3>
-						<div class="form-group">
-							<label>Do you recycle newspaper?</label>
-							<div class="alert alert-danger" role="alert" id="newspaper-alert"><strong>Oops!</strong> You need to make a selection.</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="newspaperOptionsRadios" id="optionsRadio1" value="option1">
-									Yes
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="newspaperOptionsRadios" id="optionsRadio2" value="option2">
-									No
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<label>Do you recycle aluminum and tin?</label>
-							<div class="alert alert-danger" role="alert" id="alum-tin-alert"><strong>Oops!</strong> You need to make a selection.</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="alumtinOptionsRadios" id="optionsRadio3" value="option3">
-									Yes
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="alumtinOptionsRadios" id="optionsRadio4" value="option4">
-									No
-								</label>
-							</div>
-						</div>
-						<br/>
-						<button id="calculate-btn" type="button" class="btn btn-success btn-lg btn-block">Calculate</button>
-					</form>
-				</div>
 
-				<div id="results" class="text-center">
-					<h1 id="score"></h1>
+<body data-ocssl='1'
+  class="home page-template-default page page-id-1497 et-tb-has-template et-tb-has-footer et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter osx et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css">
+  <div id="page-container">
+    <div id="et-boc" class="et-boc">
+
+
+
+      <header id="main-header" data-height-onload="100">
+        <div class="container clearfix et_menu_container">
+          <div class="logo_container">
+            <span class="logo_helper"></span>
+            <a href="https://haitireforest.org/">
+              <img src="https://haitireforest.org/wp-content/uploads/Logo_small.png"
+                alt="Haiti Reforestation Partnership" id="logo" data-height-percentage="75" />
+            </a>
+          </div>
+          <div id="et-top-navigation" data-height="100" data-fixed-height="75">
+            <nav id="top-menu-nav">
+              <ul id="top-menu" class="nav">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1497 current_page_item menu-item-1570">
+                  <a href="https://haitireforest.org/" aria-current="page">Home</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1625"><a
+                    href="https://haitireforest.org/our-trees/">The Story of Our Trees</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1632"><a
+                    href="https://haitireforest.org/our-role-2/">Our Role</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-673"><a
+                    href="https://haitireforest.org/our-team/">Our Team</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-468"><a
+                    href="https://haitireforest.salsalabs.org/15milliontrees">MAKE A DONATION</a></li>
+              </ul>
+            </nav>
+
+
+
+
+            <div id="et_mobile_nav_menu">
+              <div class="mobile_nav closed">
+                <span class="select_page">Select Page</span>
+                <span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+              </div>
+            </div>
+          </div> <!-- #et-top-navigation -->
+        </div> <!-- .container -->
+        <div class="et_search_outer">
+          <div class="container et_search_form_container">
+            <form role="search" method="get" class="et-search-form" action="https://haitireforest.org/">
+              <input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s"
+                title="Search for:" /> </form>
+            <span class="et_close_search_field"></span>
+          </div>
+        </div>
+      </header> <!-- #main-header -->
+      <div id="et-main-area">
+
+        <div id="main-content">
+
+
+
+          <article id="post-1497" class="post-1497 page type-page status-publish hentry">
+
+
+            <div class="entry-content">
+              <div class="et-l et-l--post">
+                <div class="et_builder_inner_content et_pb_gutters3">
+                  <div
+                    class="et_pb_section et_pb_section_0 et_pb_section_parallax et_pb_with_background et_pb_fullwidth_section et_section_regular" style="padding-top:0px; padding-bottom:0px">
+
+                    <div class="et_parallax_bg_wrap">
+                      <div class="et_parallax_bg"
+                        style="background-image: url(https://haitireforest.org/wp-content/uploads/assets_texture.png);">
+                      </div>
+                    </div>
+
+
+                    <section
+                      class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_pb_text_align_left et_pb_bg_layout_dark">
+
+
+                      <div class="et_pb_fullwidth_header_container left">
+                        <div class="header-content-container center">
+                          <div class="header-content">
+
+                            <h1 class="et_pb_module_header">Help us reforest Haiti.</h1>
+
+                            <div class="et_pb_header_content_wrapper">
+                              <p>This tool calculates how many trees are required to offset your carbon footprint.</p>
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="et_pb_fullwidth_header_overlay"></div>
+                      <div class="et_pb_fullwidth_header_scroll"></div>
+                    </section>
+
+
+                  </div> <!-- .et_pb_section -->
+                  <div class="et_pb_section et_pb_section_1 et_pb_with_background et_section_regular">
+
+
+
+
+                    <div class="et_pb_row et_pb_row_0">
+                      <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                        <div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                          <div class="et_pb_text_inner">
+                            <!-- <h4><b>An Update on Coronavirus and CODEP</b></h4>
+                            <div>
+                              <p style="font-weight: 400;">Folks,</p>
+                              <p style="font-weight: 400;">On April 18 I caught one of the remaining flights from Haiti
+                                to the US. I was in quarantine in Florida for two weeks, but was eventually able to
+                                check in with family members there. Now I am in Charlottesville trying to make sense out
+                                of pandemic life and how best to be effective with our CODEP partners.</p>
+                              <p style="font-weight: 400;">Edvy Durandice was in the US for medical treatments when
+                                Haiti closed its borders. He is hoping against hope to return home soon. Every day we
+                                sift through his options and try to make the best of it. We are hugely grateful to the
+                                Westendorff family for hosting him for this open-ended visit.</p>
+                              <p style="font-weight: 400;">Before I left Haiti, we set up 20 handwashing stations in
+                                such locations as the school, church, APKF, depot, a gas station, and various small
+                                street-side markets. The set up included a bucket and spigot plus dispensers of liquid
+                                soap. We corralled various people into keeping the buckets full of water. The Animators
+                                have recently attended a seminar led by a medical professional which covered pandemic
+                                safety practices such as hand washing, face coverings, and social distancing.</p>
+                              <p style="font-weight: 400;">COVID-19 will hit Haiti hard, although its closed borders
+                                have blunted the initial number of cases. The most critical need is food &#8212; which
+                                is increasingly expensive due to the year of political unrest. We welcome any donations
+                                to help meet the need. Our Arbor Day appeal continues to June 15 &#8211; half for
+                                fertilizer for the trees and half for food relief.</p>
+                              <p style="font-weight: 400;">As always, we are grateful for your support.</p>
+                              <p style="font-weight: 400;"><strong>Michael Anello</strong><br /> Executive Director</p>
+                            </div> -->
+                            <div class="container-fluid">
+                              <!-- <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" id="announcement-panel">
+                                  <h1 id="announcement-header">Offset you Carbon Footprint</h1>
+                                  <h3 id="announcement-subheader">Calculate how many trees to plant in Haiti</h3>
+                                </div>
+                              </div> -->
+                              <div class="row">
+                                
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                  <!-- <div id="form">
+                                    <form> -->
+                                      <h3 id="home-energy-label"><i class="fa fa-home" aria-hidden="true"></i> Home Energy</h3>	
+                                      <div class="form-group">
+                                        <label for="electric">Monthly electric bill</label>
+                                        <div class="input-group">
+                                          <div class="input-group-addon">$</div>
+                                          <input class="form-control" id="electric" type="number" min="0" step="0.01">
+                                        </div>
+                                        <span class="help-block">Leave blank or Enter 0 if not applicable.</span>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="gas">Monthly natural gas bill</label>
+                                        <div class="input-group">
+                                          <div class="input-group-addon">$</div>
+                                          <input class="form-control" id="gas" type="number" min="0" step="0.01">
+                                        </div>
+                                        <span class="help-block">Leave blank or Enter 0 if not applicable.</span>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="oil">Monthly oil bil</label>
+                                        
+                                        <div class="input-group">
+                                          <div class="input-group-addon">$</div>
+                                          <input class="form-control" id="oil" type="number" min="0" step="0.01">
+                                        </div>
+                                        <span class="help-block">Leave blank or Enter 0 if not applicable.</span>
+                                      </div>
+                                      <br/>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                      <h3 class="form-section-label" id="travel-label"><i class="fa fa-globe" aria-hidden="true"></i> Travel</h3>
+                                      <div class="form-group">
+                                        <label for="car">Annual miles driven on your car</label>
+                                        <input class="form-control" id="car" type="number" min="0" step="1">
+                                        <span class="help-block">Leave blank or Enter 0 if not applicable.</span>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="flights-4-less">Number of flights taken in the past year (4 hours or less)</label>
+                                        <input class="form-control" id="flights-4-less" type="number" min="0" step="1">
+                                        <span class="help-block">Leave blank or Enter 0 if not applicable.</span>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="flights-4-more">Number of flights taken in the past year (4 hours or more)</label>
+                                        <input class="form-control" id="flights-4-more" type="number" min="0" step="1">
+                                        <span class="help-block">Leave blank or Enter 0 if not applicable.</span>
+                                      </div>
+                                      <br/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                      <h3 class="form-section-label" id="recreation-label"><i class="fa fa-ship" aria-hidden="true"></i> Recreation</h3>
+                                      <div class="form-group">
+                                        <label for="ship">Annual gallons of gas used in other activities</label>
+                                        <input class="form-control" id="ship" type="number" min="0" step="1">
+                                        <span class="help-block">Leave blank or Enter 0 if not applicable.</span>
+                                      </div>
+                                      
+                                      <br/>
+                                      <h3 class="form-section-label" id="waste-label"><i class="fa fa-recycle" aria-hidden="true"></i> Waste</h3>
+                                      <div class="form-group">
+                                        <label>Do you recycle carboard / paper?</label>
+                                        <div class="alert alert-danger" role="alert" id="newspaper-alert"><strong>Oops!</strong> You need to make a selection.</div>
+                                        <div class="radio">
+                                          <label>
+                                            <input type="radio" name="newspaperOptionsRadios" id="optionsRadio1" value="option1">
+                                            Yes
+                                          </label>
+                                        </div>
+                                        <div class="radio">
+                                          <label>
+                                            <input type="radio" name="newspaperOptionsRadios" id="optionsRadio2" value="option2">
+                                            No
+                                          </label>
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label>Do you recycle aluminum and tin?</label>
+                                        <div class="alert alert-danger" role="alert" id="alum-tin-alert"><strong>Oops!</strong> You need to make a selection.</div>
+                                        <div class="radio">
+                                          <label>
+                                            <input type="radio" name="alumtinOptionsRadios" id="optionsRadio3" value="option3">
+                                            Yes
+                                          </label>
+                                        </div>
+                                        <div class="radio">
+                                          <label>
+                                            <input type="radio" name="alumtinOptionsRadios" id="optionsRadio4" value="option4">
+                                            No
+                                          </label>
+                                        </div>
+                                      </div>
+                                      <br/>
+                                      
+                                    <!-- </form>
+                                  </div> -->
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                  <button id="calculate-btn" type="button" class="btn btn-success btn-lg btn-block">Calculate</button>
+                                  
+                                	
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div> <!-- .et_pb_text -->
+                      </div> <!-- .et_pb_column -->
+
+
+                    </div> <!-- .et_pb_row -->
+
+
+                  </div> <!-- .et_pb_section -->
+                  <div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular">
+
+
+
+
+                   
+                    <div class="et_pb_row et_pb_row_2">
+                      <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                        <div class="et_pb_module et_pb_image et_pb_image_3" id="scrollTo">
+
+
+                          <span class="et_pb_image_wrap "><img
+                              src="https://haitireforest.org/wp-content/uploads/assets_arrow.png" alt="" title=""
+                              srcset="https://haitireforest.org/wp-content/uploads/assets_arrow.png 4168w, https://haitireforest.org/wp-content/uploads/assets_arrow-300x34.png 300w, https://haitireforest.org/wp-content/uploads/assets_arrow-768x88.png 768w, https://haitireforest.org/wp-content/uploads/assets_arrow-1024x117.png 1024w, https://haitireforest.org/wp-content/uploads/assets_arrow-610x70.png 610w, https://haitireforest.org/wp-content/uploads/assets_arrow-1080x123.png 1080w"
+                              sizes="(max-width: 4168px) 100vw, 4168px" /></span>
+                        </div>
+                      </div> <!-- .et_pb_column -->
+
+
+                    </div> <!-- .et_pb_row -->
+                    <div class="et_pb_row et_pb_row_3">
+                      <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                        <div class="et_pb_module et_pb_video et_pb_video_0">
+
+
+                          <div id="results" class="text-center">
+                            <h1 id="score" style="line-height: 1.5em;"></h1>
+                            <br/>
+                            <p class="lead">These numbers are calculated using the "Environment Equation" by Alex Shimo. More information below:</p>
 					<br/>
-					<p class="lead">This number represents the amount of greenhouse gases in units of carbon dioxide you emit per year</p>
-					<br/>
-					<h5 class="bg-success score-info">6,000 or below is EXCELLENT</h5>
-					<h5 class="bg-info score-info">6,000 to 15,999 is GOOD</h5>
-					<h5 class="bg-warning score-info">16,000 to 22,000 is AVERAGE</h5>
-					<h5 class="bg-danger score-info">22,000 or above is BAD</h5>
-					<br/>
-					<br/>
-					<br/>
-					<button id="recalculate-btn" type="button" class="btn btn-success btn-lg btn-block">Recalculate</button>
-				</div>
-			</div>	
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-			</div>	
-		</div>
-	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/script.js" type="text/javascript"></script>
+					<h5 class="bg-success score-info">6,000 lbs or below is EXCELLENT</h5>
+					<h5 class="bg-info score-info">6,000 lbs to 15,999 is GOOD</h5>
+					<h5 class="bg-warning score-info">16,000 lbs to 22,000 is AVERAGE</h5>
+					<h5 class="bg-danger score-info">22,000 lbs or above is BAD</h5>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <button id="recalculate-btn" type="button" class="btn btn-success btn-lg btn-block">Recalculate</button>
+                          </div>
+                        </div>	
+                      </div> <!-- .et_pb_column -->
+
+
+                    </div> <!-- .et_pb_row -->
+                    <div class="et_pb_row et_pb_row_4">
+                      <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                        <div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                          <div class="et_pb_text_inner">
+                            <p style="text-align: center;">Our story of reforestation in Haiti is about spirited CODEP
+                              people who have patiently built the soil, started seedlings, protected young plants, and
+                              <strong>built on the opportunities that their 15 million trees offer</strong>.</p>
+                          </div>
+                        </div> <!-- .et_pb_text -->
+                      </div> <!-- .et_pb_column -->
+
+
+                    </div> <!-- .et_pb_row -->
+
+
+                  </div> <!-- .et_pb_section -->
+                </div><!-- .et_builder_inner_content -->
+              </div><!-- .et-l -->
+            </div> <!-- .entry-content -->
+
+
+          </article> <!-- .et_pb_post -->
+
+
+
+        </div> <!-- #main-content -->
+
+        <footer class="et-l et-l--footer">
+          <div class="et_builder_inner_content et_pb_gutters3">
+            <div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular">
+
+
+
+
+              <div class="et_pb_row et_pb_row_0_tb_footer">
+                <div
+                  class="et_pb_column et_pb_column_1_2 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+
+
+                  <div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
+
+
+                    <span class="et_pb_image_wrap "><img
+                        src="https://haitireforest.org/wp-content/uploads/HRP_2020_logo-alt.png" alt="" title=""
+                        srcset="https://haitireforest.org/wp-content/uploads/HRP_2020_logo-alt.png 5476w, https://haitireforest.org/wp-content/uploads/HRP_2020_logo-alt-300x157.png 300w, https://haitireforest.org/wp-content/uploads/HRP_2020_logo-alt-768x403.png 768w, https://haitireforest.org/wp-content/uploads/HRP_2020_logo-alt-1024x537.png 1024w, https://haitireforest.org/wp-content/uploads/HRP_2020_logo-alt-610x320.png 610w, https://haitireforest.org/wp-content/uploads/HRP_2020_logo-alt-1080x566.png 1080w"
+                        sizes="(max-width: 5476px) 100vw, 5476px" /></span>
+                  </div>
+                </div> <!-- .et_pb_column -->
+                <div
+                  class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                  <div
+                    class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                    <div class="et_pb_text_inner">
+                      <p style="text-align: center;"><span>For three decades Haiti Reforestation Partnership has helped
+                          our Haitian partners plant </span><strong>15 million trees across 5,578 acres of
+                          mountains</strong><span>. Help us continue to plant for the future.</span></p>
+                      <p style="text-align: center;"><strong>Your donation is a gift to the people of Haiti, to all our
+                          children, and to the world.</strong></p>
+                    </div>
+                  </div> <!-- .et_pb_text -->
+                  <div
+                    class="et_pb_button_module_wrapper et_pb_button_0_tb_footer_wrapper et_pb_button_alignment_center et_pb_module ">
+                    <a class="et_pb_button et_pb_custom_button_icon et_pb_button_0_tb_footer et_pb_bg_layout_light"
+                      href="" data-icon="&#xe030;">MAKE A DONATION TODAY</a>
+                  </div>
+                </div> <!-- .et_pb_column -->
+
+
+              </div> <!-- .et_pb_row -->
+
+
+            </div> <!-- .et_pb_section -->
+            <div class="et_pb_section et_pb_section_1_tb_footer et_pb_with_background et_section_regular">
+
+
+
+
+              <div class="et_pb_row et_pb_row_1_tb_footer">
+                <div
+                  class="et_pb_column et_pb_column_1_2 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+
+
+                  <div
+                    class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+                    <div class="et_pb_text_inner">
+                      <p><strong><span style="color: #9c582f;">Haiti Reforestation Partnership</span></strong><br />
+                        info@haitireforest.org<br /> P.O. Box 7116, Charlottesville, VA 22906<br /> USA +1 (434) 981
+                        4464<br /> HAITI 509 3163 1797</p>
+                    </div>
+                  </div> <!-- .et_pb_text -->
+                </div> <!-- .et_pb_column -->
+                <div
+                  class="et_pb_column et_pb_column_1_4 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+
+
+                  <div class="et_pb_module et_pb_image et_pb_image_1_tb_footer">
+
+
+                    <span class="et_pb_image_wrap "><img
+                        src="https://haitireforest.org/wp-content/uploads/CODEP_centered_color.png" alt="" title=""
+                        srcset="https://haitireforest.org/wp-content/uploads/CODEP_centered_color.png 8335w, https://haitireforest.org/wp-content/uploads/CODEP_centered_color-300x199.png 300w, https://haitireforest.org/wp-content/uploads/CODEP_centered_color-768x511.png 768w, https://haitireforest.org/wp-content/uploads/CODEP_centered_color-1024x681.png 1024w, https://haitireforest.org/wp-content/uploads/CODEP_centered_color-610x406.png 610w, https://haitireforest.org/wp-content/uploads/CODEP_centered_color-1080x718.png 1080w"
+                        sizes="(max-width: 8335px) 100vw, 8335px" /></span>
+                  </div>
+                </div> <!-- .et_pb_column -->
+                <div
+                  class="et_pb_column et_pb_column_1_4 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                  <div class="et_pb_module et_pb_image et_pb_image_2_tb_footer">
+
+
+                    <span class="et_pb_image_wrap "><img
+                        src="https://haitireforest.org/wp-content/uploads/Logo_Color_small.png" alt="" title=""
+                        srcset="https://haitireforest.org/wp-content/uploads/Logo_Color_small.png 500w, https://haitireforest.org/wp-content/uploads/Logo_Color_small-480x320.png 480w"
+                        sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 500px, 100vw" /></span>
+                  </div>
+                </div> <!-- .et_pb_column -->
+
+
+              </div> <!-- .et_pb_row -->
+
+
+            </div> <!-- .et_pb_section -->
+          </div><!-- .et_builder_inner_content -->
+        </footer><!-- .et-l -->
+      </div> <!-- #et-main-area -->
+
+
+    </div><!-- #et-boc -->
+  </div> <!-- #page-container -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    var et_animation_data = [{ "class": "et_pb_image_0", "style": "fade", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_image_1", "style": "fade", "repeat": "once", "duration": "1000ms", "delay": "100ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_image_2", "style": "fade", "repeat": "once", "duration": "1000ms", "delay": "200ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }];
+  </script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var DIVI = { "item_count": "%d Item", "items_count": "%d Items" };
+    var et_shortcodes_strings = { "previous": "Previous", "next": "Next" };
+    var et_pb_custom = { "ajaxurl": "https:\/\/haitireforest.org\/wp-admin\/admin-ajax.php", "images_uri": "https:\/\/haitireforest.org\/wp-content\/themes\/Divi\/images", "builder_images_uri": "https:\/\/haitireforest.org\/wp-content\/themes\/Divi\/includes\/builder\/images", "et_frontend_nonce": "9a46bcbd14", "subscription_failed": "Please, check the fields below to make sure you entered the correct information.", "et_ab_log_nonce": "d912cd1559", "fill_message": "Please, fill in the following fields:", "contact_error_message": "Please, fix the following errors:", "invalid": "Invalid email", "captcha": "Captcha", "prev": "Prev", "previous": "Previous", "next": "Next", "wrong_captcha": "You entered the wrong number in captcha.", "wrong_checkbox": "Checkbox", "ignore_waypoints": "no", "is_divi_theme_used": "1", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "1497", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "no", "is_shortcode_tracking": "", "tinymce_uri": "" }; var et_frontend_scripts = { "builderCssContainerPrefix": "#et-boc", "builderCssLayoutPrefix": "#et-boc .et-l" };
+    var et_pb_box_shadow_elements = [];
+    var et_pb_motion_elements = { "desktop": [], "tablet": [], "phone": [] };
+/* ]]> */
+  </script>
+  <script type='text/javascript'
+    src='https://haitireforest.org/wp-content/themes/Divi/js/custom.unified.js?ver=4.4.7'></script>
+  <script type='text/javascript'
+    src='https://haitireforest.org/wp-content/themes/Divi/core/admin/js/common.js?ver=4.4.7'></script>
+  <script type='text/javascript' src='https://haitireforest.org/wp-includes/js/wp-embed.min.js?ver=5.4.2'></script>
+
 </body>
+
 </html>

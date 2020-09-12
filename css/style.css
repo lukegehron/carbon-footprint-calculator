@@ -36,6 +36,10 @@
 	color: #008B8B;
 }
 
+#recreation-label, .fa-ship {
+	color: deepskyblue;
+}
+
 #waste-label, .fa-recycle {
 	color: #228B22;
 }
